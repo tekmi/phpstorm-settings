@@ -1,7 +1,7 @@
 # PhpStorm Live Templates 
 
-1. Please find the config file of your PHPStorm, by following the Jetbrains Guide [Directories used by the IDE to store settings, caches, plugins and logs](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs)
-2. Read more about what type of Default IDE directories you can find there, following Guide [Tuning PHPStorm](https://www.jetbrains.com/help/phpstorm/tuning-the-ide.html). Under section **Configuration directory** you shall find the list, e.g:
+1. Find config directory of your PHPStorm IDE by studying [Directories used by the IDE to store settings, caches, plugins and logs](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) guide.
+2. Explore the list of default IDE directories, by following [Tuning PHPStorm](https://www.jetbrains.com/help/phpstorm/tuning-the-ide.html) guide - Under section **Configuration directory** you shall find the comprehensive list, while below are the most interesting options:
 
 Directory | User settings
 ----------|---------
@@ -13,3 +13,11 @@ filetypes | User-defiend [file types](https://www.jetbrains.com/help/phpstorm/cr
 inspection | [Code inspection profiles](https://www.jetbrains.com/help/phpstorm/code-inspection.html)
 keymaps | [Customized keyboard shortcuts](https://www.jetbrains.com/help/phpstorm/configuring-keyboard-and-mouse-shortcuts.html)
 
+3. Copy `templates/Markdown.xml` to your `IDE config/templates` directory (example for MacOS below)
+```
+cd /tmp
+git clone git@github.com:tekmi/phpstorm-settings.git
+cp /tmp/phpstorm-settings/templates/Markdown.xml /Users/tekmi/Library/Preferences/PhpStorm2018.1/templates
+```
+
+4. Enjoy writing in Markdown (I assume you have [Mardkown Plugin](https://plugins.jetbrains.com/plugin/7793-markdown-support) installed) with new Live Templates from TekMi.
